@@ -4,9 +4,10 @@ import { ExampleDtoValidator } from '../controllers/dto/validators/example-dto.v
 import { Route } from './route';
 
 export class ExampleRoute implements Route {
-  private router = Router();
+  private router: Router;
 
   constructor() {
+    this.router = Router();
     this.initializeRoutes();
   }
 
