@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { ExampleController } from '../controller/example-controller';
+import { ExampleController } from '../controllers/example-controller';
+import { ExampleDtoValidator } from '../controllers/dto/validators/example-dto.validator';
 
-class ExampleRoute {
+export class ExampleRoute {
   public router = Router();
 
   constructor() {
@@ -9,6 +10,10 @@ class ExampleRoute {
   }
 
   public initializeRoutes(): void {
-    this.router.post('', ExampleController.example);
+    this.router.post(
+      '',
+      new ExampleDtoValidator().validate,
+      ExampleController.example,
+    );
   }
 }
