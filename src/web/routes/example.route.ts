@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { ExampleController } from '../controllers/example-controller';
-import { ExampleDtoValidator } from '../controllers/dto/validators/example-dto.validator';
-import { Route } from './route';
+import { ExampleController } from '../controllers/examples/example-controller';
+import { ExampleDtoValidator } from '../controllers/examples/dto/validators/example-dto.validator';
+import { Route } from '../core/route';
 
 export class ExampleRoute implements Route {
   private router: Router;

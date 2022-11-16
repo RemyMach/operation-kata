@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { CreateExampleService } from '../../services/create-example.service';
+import { CreateExampleService } from '../../../services/create-example.service';
 import { ExampleResponse } from './responses/example-response';
 
 export class ExampleController {
