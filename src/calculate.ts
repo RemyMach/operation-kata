@@ -53,7 +53,7 @@ export class Calculator {
     return this._currentValue;
   }
 
-  printOperations() {
+  logOperations() {
     for (const operationObj of this._operations) {
       switch (operationObj.operation) {
         case 'add':

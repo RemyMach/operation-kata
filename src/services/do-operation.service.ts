@@ -8,6 +8,7 @@ export class DoOperationService {
     for (const operation of operations) {
       calculator.execute(operation.operand, operation.value);
     }
+    calculator.logOperations();
     return calculator.currentValue;
   }
 }
