@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import { Route } from '../core/route';
-import { validate } from 'class-validator';
 import { OperationDtoValidator } from '../controllers/operations/dto/validators/opearation-dto.validator';
 import { OperationController } from '../controllers/operations/operation-controller';
 

@@ -78,13 +78,3 @@ export class Calculator {
     console.log(`Total: ${this._currentValue}`);
   }
 }
-
-//const calculator = new Calculator(0);
-
-/*calculator
-  .execute('add', 10)
-  .execute('add', 20)
-  .execute('subtract', 15)
-  .execute('multiply', 3)
-  .execute('divide', 2)
-  .printOperations();*/
