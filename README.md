@@ -9,6 +9,8 @@ The goal of this kata is to refactor the code of do-operation service to make it
 - extensible
 - testable
 
+You have to refactor the code of calculate in priority
+
 ## Scripts
 
 #### `npm run start:dev`
