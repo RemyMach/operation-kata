@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { ExampleDto } from '../example-dto';
-import { Validator } from './validator';
+import { Validator } from '../../../../core/validator';
 import { validate } from 'class-validator';
 
 export class ExampleDtoValidator implements Validator {

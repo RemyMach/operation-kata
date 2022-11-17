@@ -4,7 +4,7 @@ export class CreateExampleService {
   constructor() {}
 
   public createExample(name: string): Promise<Example> {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, _) => {
       resolve(new Example(name));
     });
   }
