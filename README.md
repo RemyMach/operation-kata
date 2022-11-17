@@ -1,18 +1,15 @@
-# 🧰 Simple TypeScript Starter | 2022
+# 🧰  TypeScript Operation kata | 2022
 
-> We talk about a lot of **advanced Node.js and TypeScript** concepts on [the blog](https://khalilstemmler.com), particularly focused around Domain-Driven Design and large-scale enterprise application patterns. However, I received a few emails from readers that were interested in seeing what a basic TypeScript starter project looks like. So I've put together just that.
+# The Goal
 
-### Features
+The goal of this kata is to refactor the code of do-operation service to make it more:
 
-- Minimal
-- TypeScript v4
-- Testing with Jest
-- Linting with Eslint and Prettier
-- Pre-commit hooks with Husky
-- VS Code debugger scripts
-- Local development with Nodemon
+- readable
+- maintainable
+- extensible
+- testable
 
-### Scripts
+## Scripts
 
 #### `npm run start:dev`
 
@@ -41,3 +38,6 @@ Format your code.
 #### `npm run prettier-watch`
 
 Format your code in watch mode, waiting for file changes.
+
+
+

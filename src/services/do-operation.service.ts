@@ -1,6 +1,6 @@
 import { Calculator } from '../calculate';
 
-export class CreateOperationService {
+export class DoOperationService {
   constructor() {}
 
   public doOperation(operations: { operand: string; value: number }[]): number {
