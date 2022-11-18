@@ -5,16 +5,18 @@ import { OperationController } from '../controllers/operations/operation-control
 
 export class OperationRoute implements Route {
   private readonly router: Router;
+  private readonly validator: OperationDtoValidator;
 
   constructor() {
     this.router = Router();
+    this.validator = new OperationDtoValidator();
     this.initializeRoutes();
   }
 
   private initializeRoutes(): void {
     this.router.post(
       '',
-      new OperationDtoValidator().validate,
+      this.validator.validate,
       OperationController.doOperation,
     );
   }
