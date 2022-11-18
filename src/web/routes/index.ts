@@ -7,6 +7,7 @@ export class RouteBuilder {
     app.use(json());
     // enable cors for all routes (for now)
     app.use(cors());
-    app.use('/operations', new OperationRoute().exposeRoutes());
+    const router = new OperationRoute();
+    app.use('/operations', router.exposeRoutes());
   }
 }

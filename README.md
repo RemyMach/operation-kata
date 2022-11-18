@@ -14,6 +14,7 @@ The goal of this kata is to refactor the code of do-operation service to make it
 #### `npm run start:dev`
 
 Starts the application in development using `nodemon` and `ts-node` to do hot reloading.
+> avec node 18 t'es plus obligé d'utilisé nodemon
 
 #### `npm run start`
 
