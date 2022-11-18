@@ -28,10 +28,10 @@ export type OperationCommand = {
 };
 
 export class DoOperationService {
-  private readonly calculatorInitialValue: number;
+  private readonly intialValue: number;
   private readonly logger: Logger;
-  constructor(calculatorInitialValue: number, logger: Logger) {
-    this.calculatorInitialValue = calculatorInitialValue;
+  constructor(initialValue: number, logger: Logger) {
+    this.intialValue = initialValue;
     this.logger = logger;
   }
 
@@ -53,6 +53,6 @@ export class DoOperationService {
         default:
           throw new Error('Unsupported operation');
       }
-   }, this.calculatorInitialValue);
+   }, this.intialValue);
   }
 }

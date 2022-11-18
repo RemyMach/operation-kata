@@ -10,8 +10,10 @@ class SpyLogger implements Logger {
 
 describe('test service initialization', () => {
   test('initilization at 0', () => {
-    const service = new DoOperationService(0, new SpyLogger());
+    const logger = new SpyLogger();
+    const service = new DoOperationService(0, logger);
     expect(service.doOperation([])).toBe(0);
+    expect(logger.call).toBe(0);
   });
 
   test('initilization at 4', () => {
